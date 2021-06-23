@@ -1,6 +1,7 @@
 const val  TAVERN_NAME = "Taerny's Folly"
 fun main(args: Array<String>) {
-    placeOrder("shandy ,Dragon's Breath, 5.91")
+  //  placeOrder("shandy ,Dragon's Breath, 5.91")
+    placeOrder("shandy ,Shirley's Temple,4.12")
 }
 
 private fun toDragonSpeak(phrase: String) =
@@ -33,7 +34,7 @@ private  fun placeOrder(menuData: String){
     val phrase = if (name == "Dragon's Breath"){
         "Madrigal exclaims ${toDragonSpeak("Ah, dlicious $name!")}"
     } else {
-        "Madrigal 說道: 感謝 $name ."
+        "Madrigal 說道: 感謝 $name."
     }
     println(phrase)
 }
